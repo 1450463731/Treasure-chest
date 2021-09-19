@@ -24,7 +24,7 @@ public class MyService extends Service {
 
         Log.e("TAG","服务绑定了");
 // 通过Binder代替IBinder
-        return new Binder();
+        return new MyBinder();
     }
 //创建MyBinder继承Binder
     class MyBinder extends Binder{
